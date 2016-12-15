@@ -60,10 +60,11 @@ class TableCipher(object):
         self._op = op
 
     def update(self, data):
-        if self._op:
-            return translate(data, self._encrypt_table)
-        else:
-            return translate(data, self._decrypt_table)
+        # if self._op:
+        #     return translate(data, self._encrypt_table)
+        # else:
+        #     return translate(data, self._decrypt_table)
+        return data
 
 
 ciphers = {
